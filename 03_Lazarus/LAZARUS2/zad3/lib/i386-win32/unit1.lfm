@@ -1,0 +1,116 @@
+object Form1: TForm1
+  Left = 500
+  Height = 350
+  Top = 200
+  Width = 500
+  Caption = 'Вычисление функции'
+  ClientHeight = 350
+  ClientWidth = 500
+  Position = poScreenCenter
+  object Label1: TLabel
+    Left = 40
+    Top = 24
+    Width = 100
+    Height = 20
+    Caption = 'Введите параметры:'
+    Font.Height = -14
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label_a: TLabel
+    Left = 56
+    Top = 60
+    Width = 20
+    Height = 20
+    Caption = 'a ='
+    Font.Height = -14
+    ParentFont = False
+  end
+  object Label_b: TLabel
+    Left = 56
+    Top = 92
+    Width = 20
+    Height = 20
+    Caption = 'b ='
+    Font.Height = -14
+    ParentFont = False
+  end
+  object Label_t: TLabel
+    Left = 56
+    Top = 124
+    Width = 20
+    Height = 20
+    Caption = 't ='
+    Font.Height = -14
+    ParentFont = False
+  end
+  object LabelResult: TLabel
+    Left = 40
+    Top = 180
+    Width = 140
+    Height = 20
+    Caption = 'Значение функции f ='
+    Font.Height = -14
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Edit_a: TEdit
+    Left = 120
+    Top = 56
+    Width = 120
+    Height = 28
+    Font.Height = -14
+    ParentFont = False
+    Text = ''
+  end
+  object Edit_b: TEdit
+    Left = 120
+    Top = 88
+    Width = 120
+    Height = 28
+    Font.Height = -14
+    ParentFont = False
+    Text = ''
+  end
+  object Edit_t: TEdit
+    Left = 120
+    Top = 120
+    Width = 120
+    Height = 28
+    Font.Height = -14
+    ParentFont = False
+    Text = ''
+  end
+  object EditResult: TEdit
+    Left = 200
+    Top = 176
+    Width = 200
+    Height = 28
+    Font.Height = -14
+    ParentFont = False
+    ReadOnly = True
+    Text = ''
+  end
+  object ButtonCalc: TButton
+    Left = 280
+    Top = 56
+    Width = 120
+    Height = 40
+    Caption = 'Вычислить'
+    Font.Height = -14
+    ParentFont = False
+    TabOrder = 3
+    OnClick = ButtonCalcClick
+  end
+  object ButtonClear: TButton
+    Left = 280
+    Top = 108
+    Width = 120
+    Height = 40
+    Caption = 'Очистить'
+    Font.Height = -14
+    ParentFont = False
+    TabOrder = 4
+    OnClick = ButtonClearClick
+  end
+end

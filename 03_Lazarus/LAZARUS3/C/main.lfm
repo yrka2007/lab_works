@@ -1,0 +1,34 @@
+object Form1: TForm1
+  Left = 227
+  Height = 412
+  Top = 153
+  Width = 633
+  Caption = 'Form1'
+  ClientHeight = 412
+  ClientWidth = 633
+  LCLVersion = '3.6.0.0'
+  object Calendar1: TCalendar
+    Left = 82
+    Height = 160
+    Top = 69
+    Width = 162
+    DateTime = 46161
+    OnChange = Calendar1Change
+    TabOrder = 0
+  end
+  object DateEdit1: TDateEdit
+    Left = 388
+    Height = 23
+    Top = 100
+    Width = 103
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    DateOrder = doNone
+    ButtonWidth = 23
+    NumGlyphs = 1
+    MaxLength = 0
+    OnChange = DateEdit1Change
+    OnClick = DateEdit1Click
+    TabOrder = 1
+    Text = 'DateEdit1'
+  end
+end

@@ -1,0 +1,35 @@
+object fMain: TfMain
+  Left = 0
+  Height = 300
+  Top = 0
+  Width = 300
+  BorderStyle = bsDialog
+  Caption = 'Типизированный файл'
+  ClientHeight = 300
+  ClientWidth = 300
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  object btnCreate: TButton
+    Left = 16
+    Height = 25
+    Top = 16
+    Width = 120
+    Caption = 'Сформировать файл'
+    OnClick = btnCreateClick
+  end
+  object btnRead: TButton
+    Left = 156
+    Height = 25
+    Top = 16
+    Width = 120
+    Caption = 'Читать из файла'
+    OnClick = btnReadClick
+  end
+  object ListBox1: TListBox
+    Left = 16
+    Height = 220
+    Top = 56
+    Width = 260
+    ItemHeight = 13
+  end
+end

@@ -1,0 +1,110 @@
+object Form1: TForm1
+  Left = 500
+  Height = 580
+  Top = 200
+  Width = 550
+  Caption = 'Вычисление функции y = x^2'
+  ClientHeight = 580
+  ClientWidth = 550
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  object Label1: TLabel
+    Left = 32
+    Top = 24
+    Width = 220
+    Height = 24
+    Caption = 'Вычисление функции y = x^2'
+    Font.Height = -18
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 70
+    Width = 60
+    Height = 20
+    Caption = 'Начало a ='
+    Font.Height = -14
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 32
+    Top = 108
+    Width = 55
+    Height = 20
+    Caption = 'Конец b ='
+    Font.Height = -14
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 32
+    Top = 146
+    Width = 65
+    Height = 20
+    Caption = 'Шаг h ='
+    Font.Height = -14
+    ParentFont = False
+  end
+  object Edit_a: TEdit
+    Left = 120
+    Top = 66
+    Width = 120
+    Height = 28
+    Font.Height = -14
+    ParentFont = False
+    Text = ''
+  end
+  object Edit_b: TEdit
+    Left = 120
+    Top = 104
+    Width = 120
+    Height = 28
+    Font.Height = -14
+    ParentFont = False
+    Text = ''
+  end
+  object Edit_h: TEdit
+    Left = 120
+    Top = 142
+    Width = 120
+    Height = 28
+    Font.Height = -14
+    ParentFont = False
+    Text = ''
+  end
+  object ButtonCalc: TButton
+    Left = 280
+    Top = 66
+    Width = 110
+    Height = 36
+    Caption = 'Вычислить'
+    Font.Height = -14
+    ParentFont = False
+    TabOrder = 3
+    OnClick = ButtonCalcClick
+  end
+  object ButtonClear: TButton
+    Left = 280
+    Top = 112
+    Width = 110
+    Height = 36
+    Caption = 'Очистить'
+    Font.Height = -14
+    ParentFont = False
+    TabOrder = 4
+    OnClick = ButtonClearClick
+  end
+  object StringGrid1: TStringGrid
+    Left = 32
+    Top = 192
+    Width = 480
+    Height = 360
+    ColCount = 2
+    DefaultColWidth = 200
+    DefaultRowHeight = 24
+    FixedCols = 0
+    RowCount = 2
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
+    TabOrder = 5
+  end
+end

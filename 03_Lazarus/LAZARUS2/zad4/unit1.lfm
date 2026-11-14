@@ -1,0 +1,118 @@
+object Form2: TForm2
+  Left = 500
+  Height = 350
+  Top = 200
+  Width = 500
+  Caption = 'Равнобедренный треугольник'
+  ClientHeight = 350
+  ClientWidth = 500
+  Position = poScreenCenter
+  object Label1: TLabel
+    Left = 40
+    Top = 24
+    Width = 180
+    Height = 20
+    Caption = 'Равнобедренный треугольник'
+    Font.Height = -14
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label_c: TLabel
+    Left = 56
+    Top = 70
+    Width = 60
+    Height = 20
+    Caption = 'Основание c ='
+    Font.Height = -14
+    ParentFont = False
+  end
+  object Label_alpha: TLabel
+    Left = 50
+    Top = 110
+    Width = 120
+    Height = 20
+    Caption = 'Угол при основании α ='
+    Font.Height = -14
+    ParentFont = False
+  end
+  object Label_a: TLabel
+    Left = 40
+    Top = 180
+    Width = 100
+    Height = 20
+    Caption = 'Боковая сторона a ='
+    Font.Height = -14
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label_S: TLabel
+    Left = 40
+    Top = 220
+    Width = 100
+    Height = 20
+    Caption = 'Площадь S ='
+    Font.Height = -14
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Edit_c: TEdit
+    Left = 200
+    Top = 66
+    Width = 120
+    Height = 28
+    Font.Height = -14
+    ParentFont = False
+    Text = ''
+  end
+  object Edit_alpha: TEdit
+    Left = 200
+    Top = 106
+    Width = 120
+    Height = 28
+    Font.Height = -14
+    ParentFont = False
+    Text = ''
+  end
+  object Edit_a: TEdit
+    Left = 180
+    Top = 176
+    Width = 140
+    Height = 28
+    Font.Height = -14
+    ParentFont = False
+    ReadOnly = True
+    Text = ''
+  end
+  object Edit_S: TEdit
+    Left = 180
+    Top = 216
+    Width = 140
+    Height = 28
+    Font.Height = -14
+    ParentFont = False
+    ReadOnly = True
+    Text = ''
+  end
+  object ButtonCalc: TButton
+    Left = 350
+    Top = 66
+    Width = 120
+    Height = 40
+    Caption = 'Вычислить'
+    Font.Height = -14
+    ParentFont = False
+    TabOrder = 2
+    OnClick = ButtonCalcClick
+  end
+  object ButtonClear: TButton
+    Left = 350
+    Top = 116
+    Width = 120
+    Height = 40
+    Caption = 'Очистить'
+    Font.Height = -14
+    ParentFont = False
+    TabOrder = 3
+    OnClick = ButtonClearClick
+  end
+end
